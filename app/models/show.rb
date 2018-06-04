@@ -4,8 +4,9 @@ class Show < ActiveRecord::Base
 
   def build_network(attr={})
     attr.each do |n,v|
-      self.network.n
+      network[:n] = v
     end
+    network
   end
 
 end
