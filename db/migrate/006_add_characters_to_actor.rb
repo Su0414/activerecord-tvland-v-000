@@ -4,6 +4,5 @@ class AddCharactersToActor < ActiveRecord::Migration[4.2]
   #we make the change.
   def change
     add_column :characters, :actor_id, :integer
-    add_column :characters, :catchphrase, :string
   end
 end
