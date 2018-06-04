@@ -7,14 +7,16 @@ class Actor < ActiveRecord::Base
   end
 
   def character_name
-    characters.map do |c|
-      c.name.join(", ")
+    ch_name = []
+    ch_name = characters.map do |c|
+      c.name
     end
   end
 
   def show_name
-    shows.map do |s|
-      s.name.join(", ")
+    sh_name = []
+    sh_name = shows.map do |s|
+      s.name
     end
   end
 
