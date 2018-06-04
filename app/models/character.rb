@@ -5,4 +5,5 @@ class Character < ActiveRecord::Base
   def say_that_thing_you_say
     "#{actor.name} always says #{actor.catchphrase}"
   end
+
 end
