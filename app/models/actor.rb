@@ -7,11 +7,15 @@ class Actor < ActiveRecord::Base
   end
 
   def character_name
-    characters.name
+    characters.map do |c|
+      c.name
+    end
   end
 
   def show_name
-    shows.name
+    shows.map do |s|
+      s.name
+    end
   end
 
   def list_roles
