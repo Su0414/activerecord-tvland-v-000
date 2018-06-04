@@ -3,10 +3,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(attr={})
-    attr.each do |n,v|
-      network[:n] = v
-    end
-    network
+    bindling.pry
   end
 
 end
