@@ -1,6 +1,6 @@
 class Show < ActiveRecord::Base
   has_many :characters
-  belongs_to :network
+  has_many :networks
 
   def build_network(attr={})
     bindling.pry
