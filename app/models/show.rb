@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   has_many :networks
   belongs_to :network
 
-  def build_network(attr={})
+  def build_xxx(attr={})
     #bindling.pry
   end
 
