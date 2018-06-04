@@ -8,13 +8,13 @@ class Actor < ActiveRecord::Base
 
   def character_name
     characters.map do |c|
-      c.name
+      c.name.join(", ")
     end
   end
 
   def show_name
     shows.map do |s|
-      s.name
+      s.name.join(", ")
     end
   end
 
