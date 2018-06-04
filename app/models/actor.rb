@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
     ch_name = characters.map do |c|
       c.name
     end
+    ch_name.join
   end
 
   def show_name
@@ -18,6 +19,7 @@ class Actor < ActiveRecord::Base
     sh_name = shows.map do |s|
       s.name
     end
+    sh_name.join
   end
 
   def list_roles
